@@ -1,4 +1,4 @@
-**Hyvia**
+Hyvia
 
 A modern full-stack e-commerce platform built for a seamless, fast, and secure shopping experience.
 
@@ -28,7 +28,7 @@ Produce a portfolio-quality project that demonstrates real software engineering 
 
 ✨ Features
 
-Shipped in MVP (this build)
+### Shipped in MVP (this build)
 
 Shopping Experience
 
@@ -98,7 +98,7 @@ Basic analytics events
 
 Cloudinary-based image uploads (currently: image URL strings on the Product model)
 
-Future
+### Future
 
 AI-assisted recommendations/search
 
@@ -239,39 +239,61 @@ Full field-level schema (types, required fields, indexes) is documented in the S
 
 🔌 API
 
-**Auth**
-- POST   /api/auth/register
-- POST   /api/auth/login
-- POST   /api/auth/logout
-- GET    /api/auth/me
+Auth
 
-**Products**
-- GET    /api/products              (supports ?category, ?featured, ?page)
-- GET    /api/products/:slug
-- POST   /api/products              [admin]
-- PUT    /api/products/:id          [admin]
-- DELETE /api/products/:id          [admin — soft-delete]
+POST /api/auth/register
 
-**Categories**
-- GET    /api/categories
-- POST   /api/categories            [admin]
+POST /api/auth/login
 
-**Cart**
-- GET    /api/cart
-- POST   /api/cart
-- PUT    /api/cart/:itemId
-- DELETE /api/cart/:itemId
+POST /api/auth/logout
 
-**Payments**
-- POST   /api/payments/create-intent
-- POST   /api/payments/webhook      [Stripe signature verified]
+GET /api/auth/me
 
-**Orders**
-- POST   /api/orders
-- GET    /api/orders
-- GET    /api/orders/:id
-- PATCH  /api/orders/:id/cancel
-- PATCH  /api/orders/:id/status     [admin]
+Products
+
+GET /api/products — supports ?category, ?featured, ?page
+
+GET /api/products/:slug
+
+POST /api/products — admin
+
+PUT /api/products/:id — admin
+
+DELETE /api/products/:id — admin — soft-delete
+
+Categories
+
+GET /api/categories
+
+POST /api/categories — admin
+
+### Cart
+
+GET /api/cart
+
+POST /api/cart
+
+PUT /api/cart/:itemId
+
+DELETE /api/cart/:itemId
+
+Payments
+
+POST /api/payments/create-intent
+
+POST /api/payments/webhook — Stripe signature verified
+
+Orders
+
+POST /api/orders
+
+GET /api/orders
+
+GET /api/orders/:id
+
+PATCH /api/orders/:id/cancel
+
+PATCH /api/orders/:id/status — admin
 
 Every route follows a consistent error shape: { error: { code, message } }.
 
@@ -319,8 +341,8 @@ Stripe account (test mode)
 
 1. Clone
 
-git clone https://github.com/<your-username>/Hyvia.git
-cd Hyvia
+git clone https://github.com/Darshan-276/Hyvia-Store.git
+cd Hyvia-Store
 
 2. Backend
 
