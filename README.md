@@ -32,7 +32,7 @@ It's my first full-stack project, built solo and end-to-end as a hands-on learni
 
 ## **✨ Features**
 
-### ### **Shipped in MVP (this build)**
+###  **Shipped in MVP (this build)**
 
 ### **Shopping Experience**
 - Responsive product catalogue with category browsing
