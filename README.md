@@ -239,39 +239,39 @@ Full field-level schema (types, required fields, indexes) is documented in the S
 
 🔌 API
 
-Auth
-POST   /api/auth/register
-POST   /api/auth/login
-POST   /api/auth/logout
-GET    /api/auth/me
+**Auth**
+- POST   /api/auth/register
+- POST   /api/auth/login
+- POST   /api/auth/logout
+- GET    /api/auth/me
 
-Products
-GET    /api/products              (supports ?category, ?featured, ?page)
-GET    /api/products/:slug
-POST   /api/products              [admin]
-PUT    /api/products/:id          [admin]
-DELETE /api/products/:id          [admin — soft-delete]
+**Products**
+- GET    /api/products              (supports ?category, ?featured, ?page)
+- GET    /api/products/:slug
+- POST   /api/products              [admin]
+- PUT    /api/products/:id          [admin]
+- DELETE /api/products/:id          [admin — soft-delete]
 
-Categories
-GET    /api/categories
-POST   /api/categories            [admin]
+**Categories**
+- GET    /api/categories
+- POST   /api/categories            [admin]
 
-Cart
-GET    /api/cart
-POST   /api/cart
-PUT    /api/cart/:itemId
-DELETE /api/cart/:itemId
+**Cart**
+- GET    /api/cart
+- POST   /api/cart
+- PUT    /api/cart/:itemId
+- DELETE /api/cart/:itemId
 
-Payments
-POST   /api/payments/create-intent
-POST   /api/payments/webhook      [Stripe signature verified]
+**Payments**
+- POST   /api/payments/create-intent
+- POST   /api/payments/webhook      [Stripe signature verified]
 
-Orders
-POST   /api/orders
-GET    /api/orders
-GET    /api/orders/:id
-PATCH  /api/orders/:id/cancel
-PATCH  /api/orders/:id/status     [admin]
+**Orders**
+- POST   /api/orders
+- GET    /api/orders
+- GET    /api/orders/:id
+- PATCH  /api/orders/:id/cancel
+- PATCH  /api/orders/:id/status     [admin]
 
 Every route follows a consistent error shape: { error: { code, message } }.
 
@@ -393,8 +393,11 @@ Localization
 📚 What I'm Learning Through Hyvia
 
 Frontend: React, Next.js App Router, TypeScript, component design, state management, forms, API integration
+
 Backend: Express, REST API design, middleware, controllers, authentication/authorization
+
 Database: MongoDB, Mongoose schemas, CRUD, indexing, embedding vs. referencing
+
 Production concepts: auth security (JWT, httpOnly cookies), payment systems, webhook verification, environment config, deployment
 
 I have an Electronics & Communication background — no prior web development experience going in. Every core feature here (auth, cart, checkout, admin logic) was written by hand to understand it properly; AI tools were used for boilerplate and setup only, never for the logic itself.
