@@ -18,7 +18,7 @@ Hyvia is a full-stack e-commerce platform covering the complete shopping flow �
 
 It's my first full-stack project, built solo and end-to-end as a hands-on learning project. Every core feature is implemented from scratch to actually understand the layer it lives in, not just to get it working.
 
-📄 A full Software Requirements Specification (architecture, database design, API design, MVP scope, and everything deferred to later phases) lives in [`/docs`](./docs).
+📄 A full Software Requirements Specification (architecture, database design, API design, MVP scope, and everything deferred to later phases).
 
 ---
 
