@@ -76,7 +76,7 @@ It's my first full-stack project, built solo and end-to-end as a hands-on learni
 - Basic analytics events
 - Cloudinary-based image uploads (currently: image URL strings on the Product model)
 
-### ### **Future**
+ ### **Future**
 
 - AI-assisted recommendations/search
 - Multi-vendor support
