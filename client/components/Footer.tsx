@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 export function Footer() {   // Notice: "export function Footer"
-
   return (
     <footer className="bg-[#111111] text-neutral-400 border-t border-neutral-800 pt-16 pb-12">
       <div className="max-w-screen-xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
